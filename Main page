@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jailbreak</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+            background-color: #111;
+            color: white;
+        }
+        #label {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        #output {
+            width: 300px;
+            height: 150px;
+            margin-top: 20px;
+            background-color: black;
+            color: green;
+            font-family: monospace;
+            padding: 10px;
+            border: 2px solid white;
+            overflow-y: auto;
+            white-space: pre-wrap;
+        }
+        button {
+            background-color: white;
+            color: black;
+            border: 2px solid black;
+            padding: 10px 20px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="label">Kidde</div>
+    <h1>Jailbreak Terminal</h1>
+    <button onclick="runHack()">Jailbreak</button>
+    <div id="output" readonly></div>
+
+    <script>
+        function runHack() {
+            let outputBox = document.getElementById("output");
+            outputBox.innerHTML = ""; 
+            for (let i = 1; i <= 5; i++) {
+                outputBox.innerHTML += `Hacker thing ${i}\n`;
+            }
+            outputBox.innerHTML += "Boom! Did the magic!";
+        }
+    </script>
+
+</body>
+</html>
